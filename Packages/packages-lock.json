@@ -72,6 +72,12 @@
         "com.unity.modules.ui": "1.0.0"
       }
     },
+    "klyukay.tools": {
+      "version": "file:KTools",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
