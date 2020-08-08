@@ -9,18 +9,16 @@ namespace Klyukay.KTools.DependencyInjection
         public abstract int Id { get; }
         public abstract int? ParentId { get; }
         
-        protected void Install()
+        protected void Install(Action<Container> registrar)
         {
             var container = DI.CreateContainer(Id, ParentId);
-            RegisterProviders(container);
+            registrar(container);
         }
         
         public void Dispose()
         {
             DI.UnregisterContainer(Id);
         }
-
-        protected abstract void RegisterProviders(Container container);
 
     }
 

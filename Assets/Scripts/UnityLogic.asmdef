@@ -1,0 +1,16 @@
+{
+    "name": "UnityLogic",
+    "references": [
+        "GUID:c54d003bc8c2945449a508ac1639523e",
+        "GUID:f6dd8c2340586cb4592bb2f46edd1dd1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
