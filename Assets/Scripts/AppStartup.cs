@@ -17,6 +17,8 @@ namespace Klyukay.ZigZag.Unity
         
         private void Awake()
         {
+            DontDestroyOnLoad(this);
+            
             var eventBus = new EventBus(SynchronizationContext.Current);
             
             var coreSettings = new CoreLogicSettings.Builder
@@ -32,7 +34,7 @@ namespace Klyukay.ZigZag.Unity
             Resources.UnloadUnusedAssets();
             GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced);
 
-            SceneManager.LoadSceneAsync((int) GameScenes.GameScene, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync((int) GameScenes.GameScene);
         }
 
         private void OnDestroy()

@@ -3,10 +3,13 @@ namespace Klyukay.ZigZag.Session
     
     public class SessionManager : StateManager<SessionManagerState>
     {
+
+        private readonly ISessionDefaults _sessionDefaults;
         
         internal SessionManager(IDefaultsContainer defaultsContainer, ILogProvider logProvider) 
             : base(defaultsContainer, logProvider)
         {
+            _sessionDefaults = DefaultsContainer.GetDefaults<ISessionDefaults>();
         }
 
         public float TotalDistance

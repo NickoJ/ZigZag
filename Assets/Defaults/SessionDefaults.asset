@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b15a89f2303408991cd5fe23f6092eb, type: 3}
-  m_Name: GameDefaults
+  m_Script: {fileID: 11500000, guid: f99a2894e2f14787b2998ab3be71ab60, type: 3}
+  m_Name: SessionDefaults
   m_EditorClassIdentifier: 
-  sessionDefaults: {fileID: 11400000, guid: 99cc880fda87741c1a9ea9fb5927f5da, type: 2}
+  moveSpeed: 1
