@@ -21,7 +21,7 @@ namespace Klyukay.ZigZag.Records
             }
         }
 
-        public float DistanceRecord
+        public int DistanceRecord
         {
             get => State.DistanceRecord;
             private set

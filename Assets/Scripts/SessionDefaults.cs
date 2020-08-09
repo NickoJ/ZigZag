@@ -9,7 +9,7 @@ namespace Klyukay.ZigZag.Unity
     {
 
         private const float MinSpeed = 0.3f;
-        private const float MaxSpeed = 2f;
+        private const float MaxSpeed = 3.5f;
 
         [SerializeField, Range(MinSpeed, MaxSpeed)] private float moveSpeed = 1f;
 

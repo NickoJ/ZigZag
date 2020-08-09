@@ -13,13 +13,11 @@ namespace Klyukay.ZigZag.Unity
 
         [SerializeField] private GameDefaults defaults = default;
 
-        private GameCoreInstaller _installer;
+        private CoreInstaller _installer;
         
         private void Awake()
         {
             DontDestroyOnLoad(this);
-            
-            var eventBus = new EventBus(SynchronizationContext.Current);
             
             var coreSettings = new CoreLogicSettings.Builder
             {
@@ -29,7 +27,7 @@ namespace Klyukay.ZigZag.Unity
             
             var logic = new CoreLogic(coreSettings);
             
-            _installer = new GameCoreInstaller(logic, eventBus);
+            _installer = new CoreInstaller(logic);
 
             Resources.UnloadUnusedAssets();
             GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced);

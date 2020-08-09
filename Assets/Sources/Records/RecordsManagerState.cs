@@ -5,7 +5,7 @@ namespace Klyukay.ZigZag.Records
     {
 
         public int CrystalRecord = 0;
-        public float DistanceRecord = 0f;
+        public int DistanceRecord = 0;
 
     }
     
